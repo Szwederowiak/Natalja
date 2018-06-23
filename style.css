@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700&subset=latin-ext');
+body {
+    background: #011;
+    font-family: 'Ubuntu Mono';
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #789;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+#game {
+    width: 900px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+#game > #password {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 46px
+    
+}
+#game > .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#game > .flex-container > #keys {
+    width: 450px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap
+}
+#game > .flex-container > #keys > button {
+    height: calc((100% / 5) - 8px);
+    width: calc((100% / 7) - 8px);
+    box-shadow: 0 black;
+    background: transparent;;
+    color: white;
+    border: solid 2px;
+    margin: 2px;
+    border-radius: 10px;
+    transition: 0.2s all;
+    //font-weight: 500;
+    font-size: 20px;
+    cursor: pointer
+}
+
+#game > .flex-container > #keys > button:active {
+    border-radius: 0;
+    
+}
+
+#game > .flex-container > #keys > button:hover {
+    transform: translateY(-3px);
+    color: #089
+    
+}
