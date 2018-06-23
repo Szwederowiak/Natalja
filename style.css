@@ -32,6 +32,10 @@ body {
     justify-content: center;
     
 }
+#game > .flex-container > #hangman {
+    width: 450px;
+    height: 280px
+}
 #game > .flex-container > #keys {
     width: 450px;
     height: 280px;

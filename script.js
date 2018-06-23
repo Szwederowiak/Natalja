@@ -1,4 +1,5 @@
-var word = prompt('Podaj słowo:', '').toUpperCase();
+//var word = prompt('Podaj słowo:', '').toUpperCase();
+var word = "Kurwa kurwie łba nie urwie";
 
 var word1 = "";
 var misses = 0;
