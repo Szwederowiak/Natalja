@@ -78,19 +78,19 @@ function check(num) {
         misses++;
         
         document.getElementById("key-" + num + "").setAttribute("onclick", ";")
-        document.getElementById("hangman").innerHTML = '<img src="img/s' + misses + '.jpg" alt="">'
+        document.getElementById("hangman").innerHTML = '<img src="img/s' + (misses - 1) + '.jpg" alt="">'
     }
     
     if(word == word1) {
         document.getElementById("keys").style.flexDirection = "column";
-        document.getElementById("keys").innerHTML = '<p>Wygrywasz, hasło to: ' + word + '</p><br/><br/><button width="100%" onclick="location.reload()">Jeszcze raz</button>';
+        document.getElementById("keys").innerHTML = '<p>Wygrywasz, hasło to: <br/>"' + word + '"</p><br/><br/><button width="100%" onclick="location.reload()">Jeszcze raz</button>';
         document.getElementById("keys").querySelector('p').style.fontSize = "28px"
         document.getElementById("keys").querySelector('button').style.width = "auto";
         document.getElementById("keys").querySelector('button').style.padding = "2px 100px";        
     }
-    if(misses >= 5) {
+    if(misses >= 6) {
         document.getElementById("keys").style.flexDirection = "column";
-        document.getElementById("keys").innerHTML = '<p>Przejebujesz, hasło to: ' + word + '</p><br/><br/><button width="100%" onclick="location.reload()">Jeszcze raz</button>';
+        document.getElementById("keys").innerHTML = '<p>Przejebujesz, hasło to:  <br/>"' + word + '"</p><br/><br/><button width="100%" onclick="location.reload()">Jeszcze raz</button>';
         document.getElementById("keys").querySelector('p').style.fontSize = "28px"
         document.getElementById("keys").querySelector('button').style.width = "auto";
         document.getElementById("keys").querySelector('button').style.padding = "2px 100px";     
